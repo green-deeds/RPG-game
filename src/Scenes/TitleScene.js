@@ -18,7 +18,7 @@ export default class TitleScene extends Phaser.Scene {
     this.gameButton = new Button(
       this,
       config.width / 2,
-      config.height / 2 - 90,
+      config.height / 2 - 80,
       'btn',
       'btn',
       'Play',
@@ -38,7 +38,7 @@ export default class TitleScene extends Phaser.Scene {
     this.gameButton = new Button(
       this,
       config.width / 2,
-      config.height / 2 + 90,
+      config.height / 2 + 80,
       'btn',
       'btn',
       'Credits',
@@ -49,12 +49,24 @@ export default class TitleScene extends Phaser.Scene {
     this.gameButton = new Button(
       this,
       config.width / 2,
-      config.height / 2 + 180,
+      config.height / 2 + 160,
       'btn',
       'btn',
       'LeaderBoard',
       'LeaderBoard',
     );
+
+    // CreateNFT
+    this.gameButton = new Button(
+      this,
+      config.width / 2,
+      config.height / 2 + 240,
+      'btn',
+      'btn',
+      'NFT',
+      'CreateNFT',
+    );
+
 
     this.model = this.sys.game.globals.model;
     if (this.model.musicOn && this.model.bgMusicPlaying === false) {
